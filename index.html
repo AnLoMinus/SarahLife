@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>פרשת חיי שרה — SarahLife (SL)</title>
+  <meta name="description" content="דף בית למאגר SarahLife — פירושים, כלים ליישום זוגיות ובניית בית של אור." />
+  <style>
+    :root{
+      --bg: #0b0f1a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --text:#e5e7eb;
+      --accent1:#7c3aed; /* purple */
+      --accent2:#06b6d4; /* cyan */
+      --accent3:#f59e0b; /* amber */
+      --gold:#ffd166;
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -20%, rgba(124,58,237,.25), transparent 60%),
+                  radial-gradient(900px 600px at -10% 80%, rgba(6,182,212,.25), transparent 60%),
+                  radial-gradient(500px 400px at 50% 120%, rgba(245,158,11,.18), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .hero{
+      margin: 24px auto 16px; padding: 32px; border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(124,58,237,.25), rgba(6,182,212,.2));
+      box-shadow: var(--shadow);
+      position: relative; overflow: hidden;
+    }
+    .hero::after{content:""; position:absolute; inset:-2px; background:
+      conic-gradient(from 180deg at 50% 50%, rgba(124,58,237,.25), rgba(6,182,212,.25), rgba(245,158,11,.25), rgba(124,58,237,.25));
+      filter: blur(60px); opacity:.25; z-index:0}
+    .hero h1{margin:0; font-size: clamp(28px, 4vw, 46px); letter-spacing:.2px}
+    .subtitle{color:var(--muted); margin-top:8px}
+    .badges{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
+    .badge{border:1px solid rgba(255,255,255,.15); padding:6px 10px; border-radius:999px; font-size:14px; backdrop-filter: blur(6px)}
+
+    .grid{display:grid; gap:18px; grid-template-columns: repeat(12, 1fr)}
+    .card{grid-column: span 12; background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:20px; box-shadow: var(--shadow)}
+    @media (min-width: 900px){
+      .lg-6{grid-column: span 6}
+      .lg-4{grid-column: span 4}
+      .lg-8{grid-column: span 8}
+      .lg-12{grid-column: span 12}
+    }
+
+    h2{margin: 0 0 8px}
+    h3{margin: 12px 0 6px}
+    p{line-height: 1.7}
+    ul{margin:0; padding-inline-start: 18px}
+    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .btn{display:inline-block; border-radius:12px; padding:10px 14px; text-decoration:none; color:#0b0f1a; font-weight:700;
+      background: linear-gradient(135deg, var(--gold), #fff3b0)}
+    .btn.sec{background: linear-gradient(135deg, #a78bfa, #67e8f9); color:#0b0f1a}
+    .muted{color:var(--muted)}
+
+    .footer{margin:28px 0 14px; font-size:14px; color:var(--muted); text-align:center}
+    .kav{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent); margin:24px 0}
+    .hl{background: linear-gradient(90deg, rgba(124,58,237,.25), rgba(6,182,212,.25)); height:2px; border-radius:2px; margin:10px 0 18px}
+    .taglist{display:flex; flex-wrap:wrap; gap:8px}
+    .tag{font-size:13px; padding:6px 10px; border-radius:999px; border:1px dashed rgba(255,255,255,.2); color:#dbeafe}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+
+    .quote{border-right:4px solid var(--gold); padding:10px 14px; background:rgba(255,255,255,.04); border-radius:12px}
+    .rap{background:rgba(124,58,237,.08); border:1px solid rgba(124,58,237,.18); border-radius:16px; padding:14px}
+  </style>
+</head>
+<body>
+  <header class="container hero">
+    <h1>✨ פרשת חיי שרה — SarahLife <span class="mono">(SL)</span></h1>
+    <p class="subtitle">פירושים 💡 · כלים לזוגיות 🕊️ · בניית בית של אור ✨</p>
+    <div class="badges">
+      <span class="badge">#חיי_שרה</span>
+      <span class="badge">#SarahLife</span>
+      <span class="badge">#בית_של_אור</span>
+      <span class="badge">#זוגיות_של_חסד</span>
+      <span class="badge">#OpenTorahAI</span>
+    </div>
+    <div class="btns">
+      <a class="btn" href="https://github.com/AnLoMinus/SarahLife" target="_blank" rel="noopener">למאגר ב‑GitHub</a>
+      <a class="btn sec" href="#pirushim">לפיּרוּשים</a>
+      <a class="btn sec" href="#bayit">לכלי זוגיות</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <article id="about" class="card lg-8">
+        <h2>🌹 מהות הפרשה</h2>
+        <div class="hl"></div>
+        <p>
+          הפרשה פותחת ב"חיי שרה" דווקא לאחר הסתלקותה, כדי ללמד שחיי אמת נמדדים לפי <strong>האור שנשאר</strong> בעולם: חסד, אמונה, ודרך.
+          אברהם קונה את מערת המכפלה בקניין גלוי ונקי — יסוד לחיבור לארץ. אליעזר פוגש את רבקה, שחסדה הפשוט יוצר <strong>זיווג אמת</strong>.
+        </p>
+        <div class="quote"><strong>פסוק מפתח:</strong> "וַה׳ בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל" (בראשית כ"ד, א').</div>
+      </article>
+
+      <aside class="card lg-4">
+        <h3>📅 תאריך ושעה</h3>
+        <div class="hl"></div>
+        <p>כ"ח בחשוון תשפ"ו · 10 בנובמבר 2025<br>שעה נוכחית: <span id="now">16:10</span> (שעון ישראל)</p>
+        <h3>🧭 קוד־שם לפרויקט</h3>
+        <div class="hl"></div>
+        <p><strong>Sarah Light</strong> — <span class="mono">SL</span></p>
+        <h3>🏷️ האשטאגים</h3>
+        <div class="hl"></div>
+        <div class="taglist">
+          <span class="tag">#SarahLife</span>
+          <span class="tag">#ChayeiSarah</span>
+          <span class="tag">#BayitShelOr</span>
+          <span class="tag">#Hesed</span>
+          <span class="tag">#Zivug</span>
+        </div>
+      </aside>
+    </section>
+
+    <div class="kav"></div>
+
+    <section id="pirushim" class="grid">
+      <article class="card lg-12">
+        <h2>💡 פירושים — מהלכי עומק קצרים</h2>
+        <div class="hl"></div>
+        <ul>
+          <li><strong>חיים אחרי החיים:</strong> חיי האדם נמדדים במה שנשאר — אהבה, חסד ומורשת.</li>
+          <li><strong>קניין גלוי:</strong> מערת המכפלה נקנית בכסף מלא → חיבור טהור לארץ.</li>
+          <li><strong>מבחן הלב:</strong> רבקה נמדדת בחסד יוזם → זיווג אמת נבנה ממעשים.</li>
+          <li><strong>ירושה רוחנית:</strong> "אֵת הַכֹּל" = תודעת טוב שמעצבת דורות.</li>
+        </ul>
+        <p class="muted">לקריאה מעמיקה — ראה/י קבצי הקנבס במאגר (Pirushim, Bayit Or).</p>
+      </article>
+    </section>
+
+    <section id="bayit" class="grid">
+      <article class="card lg-6">
+        <h2>🕊️ בית של אור — 4 עמודים</h2>
+        <div class="hl"></div>
+        <ol>
+          <li><strong>חסד יומיומי:</strong> מחמאה, הקשבה, מעשה חסד קטן.</li>
+          <li><strong>אמת רכה:</strong> נשימה → "אני מרגיש" → בקשת הלב.</li>
+          <li><strong>אווירת בית:</strong> מוזיקה נעימה, נר דולק, מילה טובה.</li>
+          <li><strong>זהות משותפת:</strong> שליחות, ערכים, מה מגדלים יחד.</li>
+        </ol>
+        <p>הוסף/י "<em>זמן זוגי מקודש</em>" שבועי — נוכחות בלי הסחות דעת.</p>
+      </article>
+      <article class="card lg-6">
+        <h2>🛠️ תרגול יומי בשלוש דקות</h2>
+        <div class="hl"></div>
+        <ul>
+          <li>🫶 <strong>סבב הוקרה:</strong> כל אחד אומר דבר אחד שמעריך.</li>
+          <li>🌬️ <strong>נשימת סינכרון:</strong> 5 נשימות ביחד.</li>
+          <li>🗺️ <strong>תיאום ציפיות קצר:</strong> דבר אחד קטן שכל אחד עושה היום עבור הבית.</li>
+        </ul>
+        <div class="btns">
+          <a class="btn sec" href="#ritual">לטקס בית של אור</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="ritual" class="grid">
+      <article class="card lg-12">
+        <h2>🕯️ טקס בית של אור (לשבת/למועד)</h2>
+        <div class="hl"></div>
+        <ul>
+          <li><strong>הכנה:</strong> ניקיון קצר, מוזיקה עדינה, כיבוי מסכים.</li>
+          <li><strong>פתיחה:</strong> הדלקת נר, אמירת תודה הדדית.</li>
+          <li><strong>לחם/מתוק קטן:</strong> ברכה בקול, מבט בעיניים.</li>
+          <li><strong>שיתוף:</strong> רגע אור מהשבוע + בקשה לשבוע הבא.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card lg-8">
+        <h2>📜 פסוק מלווה</h2>
+        <div class="hl"></div>
+        <p class="quote">"וְעַמֵּךְ כֻּלָּם צַדִּיקִים — לְעוֹלָם יִירְשׁוּ אָרֶץ" · "וַה׳ בֵּרַךְ אֶת אַבְרָהָם בַּכֹּל"</p>
+        <h3>🎤 פזמון ראפ (4 שורות)</h3>
+        <div class="rap">
+          אור בבית מדליקים בנשימה ובמבט,<br>
+          חסד קטן כל יום — זה הסוד שנשמר עד,<br>
+          לב אל לב נושם, חולף כל ענן כבד,<br>
+          יחד בונים אור — דור אחר דור לעד.
+        </div>
+      </article>
+      <aside class="card lg-4">
+        <h2>👥 קרדיטים</h2>
+        <div class="hl"></div>
+        <ul>
+          <li><a href="https://github.com/AnLoMinus/SarahLife" target="_blank" rel="noopener">SarahLife · המאגר הראשי</a></li>
+          <li><a href="https://github.com/AnLoMinus/ParaFlow" target="_blank" rel="noopener">ParaFlow — פרשות השבוע</a></li>
+          <li><a href="https://github.com/AnLoMinus/OpenTorah.AI" target="_blank" rel="noopener">OpenTorah.AI — מסילות לימוד</a></li>
+          <li><a href="https://github.com/AnLoMinus/SulamYehuda" target="_blank" rel="noopener">SulamYehuda — השראה קבלית</a></li>
+        </ul>
+        <p class="muted">הדף בנוי ללא תלות חיצונית (CSS בלבד), מוכן ל‑GitHub Pages.</p>
+      </aside>
+    </section>
+
+    <div class="kav"></div>
+
+    <section class="grid">
+      <article class="card lg-12">
+        <h2>🚀 איך מפעילים ב‑GitHub Pages?</h2>
+        <div class="hl"></div>
+        <ol>
+          <li>שמור/י קובץ זה בשם <span class="mono">index.html</span> בתיקיית השורש של המאגר.</li>
+          <li>פתח/י <em>Settings → Pages</em> ובחר/י Source: <em>Main</em> / <em>root</em>.</li>
+          <li>שמור/י. הכתובת תופיע מתחת להגדרות Pages לאחר דקות ספורות.</li>
+        </ol>
+        <p class="muted">אפשר להרחיב בהמשך: דפי משנה, גלריית קלפים, תבניות הדפסה A4 ועוד.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© SarahLife (SL) — בניית בית של אור • נוצר באהבה • כ"ח בחשוון תשפ"ו · 10/11/2025 · <span id="now2">16:10</span> IST</div>
+  </footer>
+
+  <script>
+    // עדכון שעה מיידי בדפדפן המשתמש
+    function pad(n){return n.toString().padStart(2,'0')}
+    const d=new Date();
+    const t=pad(d.getHours())+":"+pad(d.getMinutes());
+    document.getElementById('now').textContent=t;
+    document.getElementById('now2').textContent=t+"";
+  </script>
+</body>
+</html>
